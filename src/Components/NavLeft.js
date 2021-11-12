@@ -33,6 +33,7 @@ const users = [
 ];
 
 const NavLeft = styled.nav`
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -40,6 +41,12 @@ const NavLeft = styled.nav`
   margin-top: 54px;
   height: calc(100% - 54px);
   background-color: #e2e2e4;
+
+  transition: all 0.2s ease-in;
+  @media screen and (max-width: 1200px) {
+    overflow: hidden;
+    width: 50px;
+  }
 `;
 
 export default () => {

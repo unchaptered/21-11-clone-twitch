@@ -6,6 +6,7 @@ import SVGIcon from "./SVGIcon";
 import NavTopInput from "./NavTopInput";
 
 const NavTop = styled.nav`
+  z-index: 10;
   position: fixed;
   top: 0;
   left: 0;
@@ -61,8 +62,8 @@ export default () => {
             "M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z",
           ]}
         />
-        <Button text="로그인" />
-        <Button text="회원가입" />
+        <Button text="로그인" bgColor="#F2F2F2" />
+        <Button text="회원가입" color="#FFFFFF" bgColor="#8D4CF0" />
         <SVGIcon
           xmlns="http://www.w3.org/2000/svg"
           class="h-5 w-5"
